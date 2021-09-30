@@ -10,12 +10,10 @@
 #1) Create and Assign a type float variable called fltOne the value 10 (3)
 
 fltOne = float(10)
-print(fltOne)
 
 #2) Create and Assign a type float variable called fltTwo the value 20 (3)
 
 fltTwo = float(20)
-print(fltTwo)
 
 #3) Create and Assign a type float variable called fltThree with the product of fltTwo and fltOne(3)
 
@@ -35,7 +33,7 @@ fltOne += 1
 
 #7)  prompt the user to provide an input to fltTwo with the message "Please provide another number for fltTwo". Ensure a float is given (4)
 
-fltTwo = float(input("Please provide another number for fltTwo: "))
+fltTwo = float(input("Please provide another number for fltTwo"))
 
 #8) on the console, output the product of fltOne and flotTwo with a suitable message (3) 
 
@@ -55,7 +53,6 @@ if fltTwo < 100:
 #9) take the difference between of fltOne and fltTwo (fltOne - fltTwo)
 
 difference = fltOne - fltTwo
-print(difference)
 
 #Using if, else and elif, output the following: 
 #If the product is below 0, output "below 0"
@@ -111,7 +108,10 @@ def calcPer(cost, percentage = 10):
     result = cost - ((percentage / 100) * cost)
     return result
 
-print(calcPer(50, 10))
+a = float(input("Enter the cost:"))
+b = float(input("Enter the percentage:"))
+
+print(calcPer(a, b))
 
 #15) create a function called caseChanger which takes a string argument written all in lower case
 #It will output all letters in lowercase except e which it will convert to capital E (10 marks)
@@ -152,12 +152,13 @@ exam_marks = (65, 66, 67, 80, 90, 65, 65, 93)
 #create a dictionary 
 
 dictionary = {}
-dictionary = dict(zip(students, exam_marks))
-print(dictionary)
 
 #write code which adds both the student and a their corresponding mark.
 #do not perform this long hand (as in writing out the values above). Use data
 #from the existing tuples above to create the dictionary
+
+dictionary = dict(zip(students, exam_marks))
+print(dictionary)
 
 
 
