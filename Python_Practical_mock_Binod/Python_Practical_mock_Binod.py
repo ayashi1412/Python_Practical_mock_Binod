@@ -1,4 +1,3 @@
-
 ##PLEASE FILL OUT THE BELOW DETAILS
 ##Student Name:  Binod Gurung
 ##Course Number: SIMR/20/001
