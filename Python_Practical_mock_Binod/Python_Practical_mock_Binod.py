@@ -6,7 +6,6 @@
 
 #Section 1 25 Marks
 
-
 #1) Create and Assign a type float variable called fltOne the value 10 (3)
 
 fltOne = float(10)
