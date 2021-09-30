@@ -87,12 +87,34 @@ print(listOfInts)
 #multiply each value by three assigning the new value to the respective 
 #index in the list. The list should now look like {12,18,24.....} (8)
 
+new_listOfInts = []
 for j in listOfInts:
-    new_number = j * 3
-    listOfInts.append(new_number)
-
-print(listOfInts)
-
+    new = 3 * j
+    new_listOfInts.append(new)
 
 #11 part c )output listOfInts to the screen with a suitable message (3)
+
+print("The new list which has the product of 3 * elements of listOfInts is: ", new_listOfInts)
+
+#Section 3 20 marks
+
+#14) create a function which calculates a decrease of a given percentage (10 marks)
+# the function should be called calcPerc
+#the function should take a cost parameter and a percentage parameter
+#it should return the cost less the percentage amount
+#For example if the paramenters are cost = 100 and percentage = 50, it should return 50. 
+#For another example, if the parameters are cost = 50 and percentage = 10, it should return 45.
+#The percentage value should assume 10% if no value is given
+#print a test to the screen with cost set as 50 and percentage set as 10
+
+
+
+
+#15) create a function called caseChanger which takes a string argument written all in lower case
+#It will output all letters in lowercase except e which it will convert to capital E (10 marks)
+#Perform a test print which using hello: caseChanger("hello") this should
+#print hEllo to the console.
+
+
+
 
