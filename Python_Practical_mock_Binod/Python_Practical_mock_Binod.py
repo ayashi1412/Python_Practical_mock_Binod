@@ -35,12 +35,12 @@ fltOne += 1
 
 #7)  prompt the user to provide an input to fltTwo with the message "Please provide another number for fltTwo". Ensure a float is given (4)
 
-fltTwo = float(input("Please provide another number for fltTwo."))
+fltTwo = float(input("Please provide another number for fltTwo: "))
 
 #8) on the console, output the product of fltOne and flotTwo with a suitable message (3) 
 
 product = fltOne * fltTwo
-print("The product of fltOne and fltTwo is:" , product)
+print("The product of fltOne and fltTwo is:", product)
 
 #####################################################
 #Section 2 35 Marks
@@ -94,7 +94,7 @@ for j in listOfInts:
 
 #11 part c )output listOfInts to the screen with a suitable message (3)
 
-print("The new list which has the product of 3 * elements of listOfInts is: ", new_listOfInts)
+print("The new list is: ", new_listOfInts)
 
 #Section 3 20 marks
 
@@ -107,6 +107,11 @@ print("The new list which has the product of 3 * elements of listOfInts is: ", n
 #The percentage value should assume 10% if no value is given
 #print a test to the screen with cost set as 50 and percentage set as 10
 
+def calcPer(cost, percentage = 10):
+    result = cost - ((percentage / 100) * cost)
+    return result
+
+print(calcPer(50, 10))
 
 
 
