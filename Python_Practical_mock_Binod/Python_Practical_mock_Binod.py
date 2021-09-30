@@ -113,12 +113,52 @@ def calcPer(cost, percentage = 10):
 
 print(calcPer(50, 10))
 
-
-
 #15) create a function called caseChanger which takes a string argument written all in lower case
 #It will output all letters in lowercase except e which it will convert to capital E (10 marks)
 #Perform a test print which using hello: caseChanger("hello") this should
 #print hEllo to the console.
+
+def caseChanger(var):
+    word = ""
+    for i in var:
+        if i != "e":
+            word += i
+        else:
+            word += "E"
+    return word
+
+word = input("Enter a word that has 'e': ")
+
+print(caseChanger(word))
+
+#Section 4 20 marks
+
+#16)a) Create a list that represents a set of students. The list should contain the following
+#students: Clark,Horan,Rai,White,Cooper,Jones,Cox,Smith (4 marks)
+
+students = ["Clark", "Horan", "Rai", "White", "Cooper", "Jones", "Cox", "Smith"]
+
+#b) use a method to order the students so that they are in alphabetical order (3 marks)
+
+sorted(students)
+
+#17) create a tuple that represents exam marks with the following data. (4 marks)
+#These are the respective exam marks for the alphabetically ordered student list
+# 65,66,67,80,90,65,65,93
+
+exam_marks = (65, 66, 67, 80, 90, 65, 65, 93)
+
+#18) Dictionary question (9 marks)
+#create a dictionary 
+
+dictionary = {}
+dictionary = dict(zip(students, exam_marks))
+print(dictionary)
+
+#write code which adds both the student and a their corresponding mark.
+#do not perform this long hand (as in writing out the values above). Use data
+#from the existing tuples above to create the dictionary
+
 
 
 
